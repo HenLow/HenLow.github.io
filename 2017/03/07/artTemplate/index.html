@@ -46,7 +46,7 @@ NodeJS
 支持运行时调试，可精确定位异常模板所在语句（演示）
 对 NodeJS Express 友好支持
 安全，默认对输出进行转义、在沙箱中运行编译后的代码">
-<meta property="og:updated_time" content="2017-03-06T18:56:59.066Z">
+<meta property="og:updated_time" content="2017-03-06T18:57:37.343Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="artTemplate 模板引擎">
 <meta name="twitter:description" content="artTemplate-3.0新一代 javascript 模板引擎
@@ -257,7 +257,23 @@ NodeJS
 <h3 id="template-helper-name-callback"><a href="#template-helper-name-callback" class="headerlink" title="template.helper(name, callback)"></a>template.<code>helper</code>(name, callback)</h3><p>添加辅助方法。</p>
 <p>例如时间格式器：<a href="http://aui.github.com/artTemplate/demo/helper.html" target="_blank" rel="external">演示</a></p>
 <h3 id="template-config-name-value"><a href="#template-config-name-value" class="headerlink" title="template.config(name, value)"></a>template.<code>config</code>(name, value)</h3><p>更改引擎的默认配置。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">字段 | 类型 | 默认值| 说明</div><div class="line">------------ | ------------- | ------------ | ------------</div><div class="line">openTag | String | ``&apos;&#123;&#123;&apos;`` | 逻辑语法开始标签</div><div class="line">closeTag | String | ``&quot;&#125;&#125;&quot;`` | 逻辑语法结束标签</div><div class="line">escape | Boolean | ``true`` | 是否编码输出 HTML 字符</div><div class="line">cache | Boolean | ``true`` | 是否开启缓存（依赖 options 的 filename 字段）</div><div class="line">compress | Boolean | ``false`` | 是否压缩 HTML 多余空白字符</div></pre></td></tr></table></figure></p>
-<h2 id="使用预编译"><a href="#使用预编译" class="headerlink" title="使用预编译"></a>使用预编译</h2>
+<h2 id="使用预编译"><a href="#使用预编译" class="headerlink" title="使用预编译"></a>使用预编译</h2><h2 id="使用预编译-1"><a href="#使用预编译-1" class="headerlink" title="使用预编译"></a>使用预编译</h2><p>可突破浏览器限制，让前端模板拥有后端模板一样的同步“文件”加载能力：</p>
+<p>一、<strong>按文件与目录组织模板</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">template(&apos;tpl/home/main&apos;, data)</div></pre></td></tr></table></figure>
+<p>二、<strong>模板支持引入子模板</strong><br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&#123;&#123;include &apos;../public/header&apos;&#125;&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="基于预编译："><a href="#基于预编译：" class="headerlink" title="基于预编译："></a>基于预编译：</h3><ul>
+<li>可将模板转换成为非常精简的 js 文件（不依赖引擎）</li>
+<li>使用同步模板加载接口</li>
+<li>支持多种 js 模块输出：AMD、CMD、CommonJS</li>
+<li>支持作为 GruntJS 插件构建</li>
+<li>前端模板可共享给 NodeJS 执行</li>
+<li>自动压缩打包模板</li>
+</ul>
+<p>预编译工具：<a href="http://github.com/aui/tmodjs/" target="_blank" rel="external">TmodJS</a></p>
+<h2 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install art-template</div></pre></td></tr></table></figure>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var template = require(&apos;art-template&apos;);</div><div class="line">var data = &#123;list: [&quot;aui&quot;, &quot;test&quot;]&#125;;</div><div class="line"></div><div class="line">var html = template(__dirname + &apos;/index/main&apos;, data);</div></pre></td></tr></table></figure>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>NodeJS 版本新增了如下默认配置：</p>
+
       
 
       
