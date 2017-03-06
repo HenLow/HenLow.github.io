@@ -155,7 +155,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/07/artTemplate/">artTemplate</a>
+      <a class="article-title" href="/2017/03/07/artTemplate/">artTemplate 模板引擎</a>
     </h1>
   
 
@@ -180,7 +180,18 @@
 <li><a href="#更新日志">更新日志</a></li>
 <li><a href="#授权协议">授权协议</a></li>
 </ul>
-
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ol>
+<li>性能卓越，执行速度通常是 Mustache 与 tmpl 的 20 多倍（<a href="http://aui.github.com/artTemplate/test/test-speed.html" target="_blank" rel="external">性能测试</a>）</li>
+<li>支持运行时调试，可精确定位异常模板所在语句（<a href="http://aui.github.io/artTemplate/demo/debug.html" target="_blank" rel="external">演示</a>）</li>
+<li>对 NodeJS Express 友好支持</li>
+<li>安全，默认对输出进行转义、在沙箱中运行编译后的代码（Node版本可以安全执行用户上传的模板）</li>
+<li>支持<code>include</code>语句</li>
+<li>可在浏览器端实现按路径加载模板（<a href="#使用预编译">详情</a>）</li>
+<li>支持预编译，可将模板转换成为非常精简的 js 文件</li>
+<li>模板语句简洁，无需前缀引用数据，有简洁版本与原生语法版本可选</li>
+<li>支持所有流行的浏览器</li>
+</ol>
+<h2 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h2><h3 id="编写模板"><a href="#编写模板" class="headerlink" title="编写模板"></a>编写模板</h3>
       
 
       
