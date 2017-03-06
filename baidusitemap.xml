@@ -4,6 +4,21 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/03/06/article-title1/</loc>
+    <lastmod>2017-03-06T18:27:33.470Z</lastmod>
+    <data>
+        <display>
+        <title>2017年3月6日 04:25:30创建</title>
+        <pubTime>2017-03-05T18:09:50.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/03/06/less/</loc>
     <lastmod>2017-03-06T04:35:15.581Z</lastmod>
     <data>
@@ -40,21 +55,6 @@
         <display>
         <title>html5复习</title>
         <pubTime>2017-03-06T04:27:46.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/03/06/article-title/</loc>
-    <lastmod>2017-03-05T20:25:35.991Z</lastmod>
-    <data>
-        <display>
-        <title>2017年3月6日 04:25:30创建</title>
-        <pubTime>2017-03-05T18:09:50.000Z</pubTime>
         
          
            
