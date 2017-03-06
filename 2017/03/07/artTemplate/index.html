@@ -46,7 +46,7 @@ NodeJS
 支持运行时调试，可精确定位异常模板所在语句（演示）
 对 NodeJS Express 友好支持
 安全，默认对输出进行转义、在沙箱中运行编译后的代码">
-<meta property="og:updated_time" content="2017-03-06T18:53:03.352Z">
+<meta property="og:updated_time" content="2017-03-06T18:54:33.417Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="artTemplate 模板引擎">
 <meta name="twitter:description" content="artTemplate-3.0新一代 javascript 模板引擎
@@ -246,7 +246,17 @@ NodeJS
 <p><a href="https://github.com/aui/artTemplate/wiki/syntax:simple" target="_blank" rel="external">查看语法与演示</a></p>
 <h3 id="原生语法"><a href="#原生语法" class="headerlink" title="原生语法"></a>原生语法</h3>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;%if (admin)&#123;%&gt;</div><div class="line">   &lt;%include(&apos;admin_content&apos;)%&gt;</div><div class="line"></div><div class="line">   &lt;%for (var i=0;i&lt;list.length;i++) &#123;%&gt;</div><div class="line">      &lt;div&gt;&lt;%=i%&gt;. &lt;%=list[i].user%&gt;&lt;/div&gt;</div><div class="line">   &lt;%&#125;%&gt;</div><div class="line">&lt;%&#125;%&gt;</div></pre></td></tr></table></figure>
 <p><a href="https://github.com/aui/artTemplate/wiki/syntax:native" target="_blank" rel="external">查看语法与演示</a></p>
-
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><ul>
+<li><a href="https://raw.github.com/aui/artTemplate/master/dist/template.js" target="_blank" rel="external">template.js</a> <em>(简洁语法版, 2.7kb)</em> </li>
+<li><a href="https://raw.github.com/aui/artTemplate/master/dist/template-native.js" target="_blank" rel="external">template-native.js</a> <em>(原生语法版, 2.3kb)</em></li>
+</ul>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><h3 id="template-id-data"><a href="#template-id-data" class="headerlink" title="template(id, data)"></a>template(id, data)</h3><p>根据 id 渲染模板。内部会根据<code>document.getElementById(id)</code>查找模板。</p>
+<p>如果没有 data 参数，那么将返回一渲染函数。</p>
+<h3 id="template-compile-source-options"><a href="#template-compile-source-options" class="headerlink" title="template.compile(source, options)"></a>template.<code>compile</code>(source, options)</h3><p>将返回一个渲染函数。<a href="http://aui.github.com/artTemplate/demo/compile.html" target="_blank" rel="external">演示</a></p>
+<h3 id="template-render-source-options"><a href="#template-render-source-options" class="headerlink" title="template.render(source, options)"></a>template.<code>render</code>(source, options)</h3><p>将返回渲染结果。</p>
+<h3 id="template-helper-name-callback"><a href="#template-helper-name-callback" class="headerlink" title="template.helper(name, callback)"></a>template.<code>helper</code>(name, callback)</h3><p>添加辅助方法。</p>
+<p>例如时间格式器：<a href="http://aui.github.com/artTemplate/demo/helper.html" target="_blank" rel="external">演示</a></p>
+<h3 id="template-config-name-value"><a href="#template-config-name-value" class="headerlink" title="template.config(name, value)"></a>template.<code>config</code>(name, value)</h3>
       
 
       
