@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/03/06/article-title1/</loc>
+    <lastmod>2017-03-21T08:43:57.852Z</lastmod>
+    <data>
+        <display>
+        <title>2017年3月6日 04:25:30创建</title>
+        <pubTime>2017-03-05T18:09:50.000Z</pubTime>
+        
+        <tag>-记录</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/03/21/Webstrom%E4%B8%AA%E4%BA%BA%E8%AE%BE%E7%BD%AE/</loc>
     <lastmod>2017-03-21T08:33:18.410Z</lastmod>
     <data>
@@ -85,21 +102,6 @@
         <display>
         <title>写博客、发布文章</title>
         <pubTime>2017-03-05T20:09:50.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/03/06/article-title1/</loc>
-    <lastmod>2017-03-21T08:16:28.810Z</lastmod>
-    <data>
-        <display>
-        <title>2017年3月6日 04:25:30创建</title>
-        <pubTime>2017-03-05T18:09:50.000Z</pubTime>
         
          
            
