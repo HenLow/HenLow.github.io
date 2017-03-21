@@ -4,14 +4,14 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/03/06/article-title1/</loc>
-    <lastmod>2017-03-21T08:43:57.852Z</lastmod>
+    <loc>http://yoursite.com/2017/03/06/%E5%86%99%E5%8D%9A%E5%AE%A2%E3%80%81%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2017-03-21T08:52:16.276Z</lastmod>
     <data>
         <display>
-        <title>2017年3月6日 04:25:30创建</title>
-        <pubTime>2017-03-05T18:09:50.000Z</pubTime>
+        <title>写博客、发布文章</title>
+        <pubTime>2017-03-05T20:09:50.000Z</pubTime>
         
-        <tag>-记录</tag>
+        <tag>博客</tag>
          
          
            
@@ -22,27 +22,14 @@
     
   <url>
     <loc>http://yoursite.com/2017/03/21/Webstrom%E4%B8%AA%E4%BA%BA%E8%AE%BE%E7%BD%AE/</loc>
-    <lastmod>2017-03-21T08:33:18.410Z</lastmod>
+    <lastmod>2017-03-21T08:52:12.376Z</lastmod>
     <data>
         <display>
         <title>Webstrom个人设置</title>
         <pubTime>2017-03-21T07:56:05.000Z</pubTime>
         
+        <tag>编辑器</tag>
          
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/03/17/artTemplate/</loc>
-    <lastmod>2017-03-21T08:18:46.115Z</lastmod>
-    <data>
-        <display>
-        <title>artTemplate 模板引擎</title>
-        <pubTime>2017-03-16T18:31:11.000Z</pubTime>
-        
          
            
         </display>
@@ -52,27 +39,14 @@
     
   <url>
     <loc>http://yoursite.com/2017/03/16/less/</loc>
-    <lastmod>2017-03-21T08:18:40.359Z</lastmod>
+    <lastmod>2017-03-21T08:52:08.864Z</lastmod>
     <data>
         <display>
         <title>less预处理CSS</title>
         <pubTime>2017-03-16T04:29:44.000Z</pubTime>
         
+        <tag>前端</tag>
          
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/03/12/HTML5/</loc>
-    <lastmod>2017-03-21T08:18:34.603Z</lastmod>
-    <data>
-        <display>
-        <title>html5复习</title>
-        <pubTime>2017-03-12T04:27:46.000Z</pubTime>
-        
          
            
         </display>
@@ -82,12 +56,16 @@
     
   <url>
     <loc>http://yoursite.com/2017/03/10/jQuery/</loc>
-    <lastmod>2017-03-21T08:17:12.895Z</lastmod>
+    <lastmod>2017-03-21T08:51:19.559Z</lastmod>
     <data>
         <display>
         <title>JQ复习</title>
         <pubTime>2017-03-10T04:29:53.000Z</pubTime>
         
+        <tag>前端</tag>
+         
+        <tag>jQuery</tag>
+         
          
            
         </display>
@@ -96,13 +74,53 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/03/06/%E5%86%99%E5%8D%9A%E5%AE%A2%E3%80%81%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2017-03-21T08:16:47.621Z</lastmod>
+    <loc>http://yoursite.com/2017/03/12/HTML5/</loc>
+    <lastmod>2017-03-21T08:51:02.618Z</lastmod>
     <data>
         <display>
-        <title>写博客、发布文章</title>
-        <pubTime>2017-03-05T20:09:50.000Z</pubTime>
+        <title>html5复习</title>
+        <pubTime>2017-03-12T04:27:46.000Z</pubTime>
         
+        <tag>前端</tag>
+         
+        <tag>html5</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/03/06/article-title1/</loc>
+    <lastmod>2017-03-21T08:50:38.935Z</lastmod>
+    <data>
+        <display>
+        <title>2017年3月6日 04:25:30创建</title>
+        <pubTime>2017-03-05T18:09:50.000Z</pubTime>
+        
+        <tag>记录</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/03/17/artTemplate/</loc>
+    <lastmod>2017-03-21T08:50:33.617Z</lastmod>
+    <data>
+        <display>
+        <title>artTemplate 模板引擎</title>
+        <pubTime>2017-03-16T18:31:11.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+        <tag>模板引擎</tag>
+         
          
            
         </display>
