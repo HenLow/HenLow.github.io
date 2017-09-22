@@ -6,48 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>artTemplate 模板引擎 | Orange 个人博客。</title>
+  <title>Tag: 工具 | Orange 个人博客。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="artTemplate-3.0新一代 javascript 模板引擎
-目录
-特性
-快速上手
-模板语法
-下载
-方法
-NodeJS
-使用预编译
-更新日志
-授权协议">
-<meta property="og:type" content="article">
-<meta property="og:title" content="artTemplate 模板引擎">
-<meta property="og:url" content="http://yoursite.com/2017/03/17/artTemplate/index.html">
+  <meta name="description" content="个人博客。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Orange 个人博客。">
+<meta property="og:url" content="http://yoursite.com/tags/工具/index.html">
 <meta property="og:site_name" content="Orange 个人博客。">
-<meta property="og:description" content="artTemplate-3.0新一代 javascript 模板引擎
-目录
-特性
-快速上手
-模板语法
-下载
-方法
-NodeJS
-使用预编译
-更新日志
-授权协议">
-<meta property="og:updated_time" content="2017-03-21T08:50:33.617Z">
+<meta property="og:description" content="个人博客。">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="artTemplate 模板引擎">
-<meta name="twitter:description" content="artTemplate-3.0新一代 javascript 模板引擎
-目录
-特性
-快速上手
-模板语法
-下载
-方法
-NodeJS
-使用预编译
-更新日志
-授权协议">
+<meta name="twitter:title" content="Orange 个人博客。">
+<meta name="twitter:description" content="个人博客。">
   
     <link rel="alternative" href="/atom.xml" title="Orange 个人博客。" type="application/atom+xml">
   
@@ -177,146 +146,36 @@ NodeJS
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-artTemplate" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      artTemplate 模板引擎
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/09/23/Git学习/" class="archive-article-date">
+  	<time datetime="2017-09-22T16:19:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-23</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/09/23/Git学习/">Git学习</a>
     </h1>
   
 
-        
-        <a href="/2017/03/17/artTemplate/" class="archive-article-date">
-  	<time datetime="2017-03-16T18:31:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="artTemplate-3-0"><a href="#artTemplate-3-0" class="headerlink" title="artTemplate-3.0"></a>artTemplate-3.0</h1><p>新一代 javascript 模板引擎</p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
-<li><a href="#特性">特性</a></li>
-<li><a href="#快速上手">快速上手</a></li>
-<li><a href="#模板语法">模板语法</a></li>
-<li><a href="#下载">下载</a></li>
-<li><a href="#方法">方法</a></li>
-<li><a href="#nodejs">NodeJS</a></li>
-<li><a href="#使用预编译">使用预编译</a></li>
-<li><a href="#更新日志">更新日志</a></li>
-<li><a href="#授权协议">授权协议</a></li>
-</ul>
-<a id="more"></a>
-<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ol>
-<li>性能卓越，执行速度通常是 Mustache 与 tmpl 的 20 多倍（<a href="http://aui.github.com/artTemplate/test/test-speed.html" target="_blank" rel="external">性能测试</a>）</li>
-<li>支持运行时调试，可精确定位异常模板所在语句（<a href="http://aui.github.io/artTemplate/demo/debug.html" target="_blank" rel="external">演示</a>）</li>
-<li>对 NodeJS Express 友好支持</li>
-<li>安全，默认对输出进行转义、在沙箱中运行编译后的代码（Node版本可以安全执行用户上传的模板）</li>
-<li>支持<code>include</code>语句</li>
-<li>可在浏览器端实现按路径加载模板（<a href="#使用预编译">详情</a>）</li>
-<li>支持预编译，可将模板转换成为非常精简的 js 文件</li>
-<li>模板语句简洁，无需前缀引用数据，有简洁版本与原生语法版本可选</li>
-<li>支持所有流行的浏览器</li>
-</ol>
-<h2 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h2><h3 id="编写模板"><a href="#编写模板" class="headerlink" title="编写模板"></a>编写模板</h3><p>使用一个<code>type=&quot;text/html&quot;</code>的<code>script</code>标签存放模板：<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;script id=&quot;test&quot; type=&quot;text/html&quot;&gt;</div><div class="line">&lt;h1&gt;&#123;&#123;title&#125;&#125;&lt;/h1&gt;</div><div class="line">&lt;ul&gt;</div><div class="line">    &#123;&#123;each list as value i&#125;&#125;</div><div class="line">        &lt;li&gt;索引 &#123;&#123;i + 1&#125;&#125; ：&#123;&#123;value&#125;&#125;&lt;/li&gt;</div><div class="line">    &#123;&#123;/each&#125;&#125;</div><div class="line">&lt;/ul&gt;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
-<h3 id="渲染模板"><a href="#渲染模板" class="headerlink" title="渲染模板"></a>渲染模板</h3>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var data = &#123;</div><div class="line">   title: &apos;标签&apos;,</div><div class="line">   list: [&apos;文艺&apos;, &apos;博客&apos;, &apos;摄影&apos;, &apos;电影&apos;, &apos;民谣&apos;, &apos;旅行&apos;, &apos;吉他&apos;]</div><div class="line">&#125;;</div><div class="line">var html = template(&apos;test&apos;, data);</div><div class="line">document.getElementById(&apos;content&apos;).innerHTML = html;</div></pre></td></tr></table></figure>
-<p><a href="http://aui.github.com/artTemplate/demo/basic.html" target="_blank" rel="external">演示</a></p>
-<h2 id="模板语法"><a href="#模板语法" class="headerlink" title="模板语法"></a>模板语法</h2><p>有两个版本的模板语法可以选择。</p>
-<h3 id="简洁语法"><a href="#简洁语法" class="headerlink" title="简洁语法"></a>简洁语法</h3><p>推荐使用，语法简单实用，利于读写。<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;&#123;if admin&#125;&#125;</div><div class="line">   &#123;&#123;include &apos;admin_content&apos;&#125;&#125;</div><div class="line">   </div><div class="line">   &#123;&#123;each list&#125;&#125;</div><div class="line">      &lt;div&gt;&#123;&#123;$index&#125;&#125;. &#123;&#123;$value.user&#125;&#125;&lt;/div&gt;</div><div class="line">   &#123;&#123;/each&#125;&#125;</div><div class="line">&#123;&#123;/if&#125;&#125;</div></pre></td></tr></table></figure></p>
-<p><a href="https://github.com/aui/artTemplate/wiki/syntax:simple" target="_blank" rel="external">查看语法与演示</a></p>
-<h3 id="原生语法"><a href="#原生语法" class="headerlink" title="原生语法"></a>原生语法</h3>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;%if (admin)&#123;%&gt;</div><div class="line">   &lt;%include(&apos;admin_content&apos;)%&gt;</div><div class="line"></div><div class="line">   &lt;%for (var i=0;i&lt;list.length;i++) &#123;%&gt;</div><div class="line">      &lt;div&gt;&lt;%=i%&gt;. &lt;%=list[i].user%&gt;&lt;/div&gt;</div><div class="line">   &lt;%&#125;%&gt;</div><div class="line">&lt;%&#125;%&gt;</div></pre></td></tr></table></figure>
-<p><a href="https://github.com/aui/artTemplate/wiki/syntax:native" target="_blank" rel="external">查看语法与演示</a></p>
-<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><ul>
-<li><a href="https://raw.github.com/aui/artTemplate/master/dist/template.js" target="_blank" rel="external">template.js</a> <em>(简洁语法版, 2.7kb)</em> </li>
-<li><a href="https://raw.github.com/aui/artTemplate/master/dist/template-native.js" target="_blank" rel="external">template-native.js</a> <em>(原生语法版, 2.3kb)</em></li>
-</ul>
-<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><h3 id="template-id-data"><a href="#template-id-data" class="headerlink" title="template(id, data)"></a>template(id, data)</h3><p>根据 id 渲染模板。内部会根据<code>document.getElementById(id)</code>查找模板。</p>
-<p>如果没有 data 参数，那么将返回一渲染函数。</p>
-<h3 id="template-compile-source-options"><a href="#template-compile-source-options" class="headerlink" title="template.compile(source, options)"></a>template.<code>compile</code>(source, options)</h3><p>将返回一个渲染函数。<a href="http://aui.github.com/artTemplate/demo/compile.html" target="_blank" rel="external">演示</a></p>
-<h3 id="template-render-source-options"><a href="#template-render-source-options" class="headerlink" title="template.render(source, options)"></a>template.<code>render</code>(source, options)</h3><p>将返回渲染结果。</p>
-<h3 id="template-helper-name-callback"><a href="#template-helper-name-callback" class="headerlink" title="template.helper(name, callback)"></a>template.<code>helper</code>(name, callback)</h3><p>添加辅助方法。</p>
-<p>例如时间格式器：<a href="http://aui.github.com/artTemplate/demo/helper.html" target="_blank" rel="external">演示</a></p>
-<h3 id="template-config-name-value"><a href="#template-config-name-value" class="headerlink" title="template.config(name, value)"></a>template.<code>config</code>(name, value)</h3><p>更改引擎的默认配置。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">字段 | 类型 | 默认值| 说明</div><div class="line">------------ | ------------- | ------------ | ------------</div><div class="line">openTag | String | ``&apos;&#123;&#123;&apos;`` | 逻辑语法开始标签</div><div class="line">closeTag | String | ``&quot;&#125;&#125;&quot;`` | 逻辑语法结束标签</div><div class="line">escape | Boolean | ``true`` | 是否编码输出 HTML 字符</div><div class="line">cache | Boolean | ``true`` | 是否开启缓存（依赖 options 的 filename 字段）</div><div class="line">compress | Boolean | ``false`` | 是否压缩 HTML 多余空白字符</div></pre></td></tr></table></figure></p>
-<h2 id="使用预编译"><a href="#使用预编译" class="headerlink" title="使用预编译"></a>使用预编译</h2><h2 id="使用预编译-1"><a href="#使用预编译-1" class="headerlink" title="使用预编译"></a>使用预编译</h2><p>可突破浏览器限制，让前端模板拥有后端模板一样的同步“文件”加载能力：</p>
-<p>一、<strong>按文件与目录组织模板</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">template(&apos;tpl/home/main&apos;, data)</div></pre></td></tr></table></figure>
-<p>二、<strong>模板支持引入子模板</strong><br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&#123;&#123;include &apos;../public/header&apos;&#125;&#125;</div></pre></td></tr></table></figure></p>
-<h3 id="基于预编译："><a href="#基于预编译：" class="headerlink" title="基于预编译："></a>基于预编译：</h3><ul>
-<li>可将模板转换成为非常精简的 js 文件（不依赖引擎）</li>
-<li>使用同步模板加载接口</li>
-<li>支持多种 js 模块输出：AMD、CMD、CommonJS</li>
-<li>支持作为 GruntJS 插件构建</li>
-<li>前端模板可共享给 NodeJS 执行</li>
-<li>自动压缩打包模板</li>
-</ul>
-<p>预编译工具：<a href="http://github.com/aui/tmodjs/" target="_blank" rel="external">TmodJS</a></p>
-<h2 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install art-template</div></pre></td></tr></table></figure>
-<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var template = require(&apos;art-template&apos;);</div><div class="line">var data = &#123;list: [&quot;aui&quot;, &quot;test&quot;]&#125;;</div><div class="line"></div><div class="line">var html = template(__dirname + &apos;/index/main&apos;, data);</div></pre></td></tr></table></figure>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>NodeJS 版本新增了如下默认配置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">字段 | 类型 | 默认值| 说明</div><div class="line">------------ | ------------- | ------------ | ------------</div><div class="line">base | String | ``&apos;&apos;`` | 指定模板目录</div><div class="line">extname | String | ``&apos;.html&apos;`` | 指定模板后缀名</div><div class="line">encoding | String | ``&apos;utf-8&apos;`` | 指定模板编码</div></pre></td></tr></table></figure></p>
-<p>配置<code>base</code>指定模板目录可以缩短模板的路径，并且能够避免<code>include</code>语句越级访问任意路径引发安全隐患，例如：<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">template.config(&apos;base&apos;, __dirname);</div><div class="line">var html = template(&apos;index/main&apos;, data)</div></pre></td></tr></table></figure></p>
-<h3 id="NodeJS-Express"><a href="#NodeJS-Express" class="headerlink" title="NodeJS + Express"></a>NodeJS + Express</h3>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var template = require(&apos;art-template&apos;);</div><div class="line">template.config(&apos;base&apos;, &apos;&apos;);</div><div class="line">template.config(&apos;extname&apos;, &apos;.html&apos;);</div><div class="line">app.engine(&apos;.html&apos;, template.__express);</div><div class="line">app.set(&apos;view engine&apos;, &apos;html&apos;);</div><div class="line">//app.set(&apos;views&apos;, __dirname + &apos;/views&apos;);</div></pre></td></tr></table></figure>
-<p>运行 demo:<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">node demo/node-template-express.js</div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>若使用 js 原生语法作为模板语法，请改用 <code>require(&#39;art-template/node/template-native.js&#39;)</code></p>
-</blockquote>
-<h2 id="升级参考"><a href="#升级参考" class="headerlink" title="升级参考"></a>升级参考</h2><p>为了适配 NodeJS express，artTemplate v3.0.0 接口有调整。</p>
-<h3 id="接口变更"><a href="#接口变更" class="headerlink" title="接口变更"></a>接口变更</h3><ol>
-<li>默认使用简洁语法</li>
-<li><code>template.render()</code>方法的第一个参数不再是 id，而是模板字符串</li>
-<li>使用新的配置接口<code>template.config()</code>并且字段名有修改</li>
-<li><code>template.compile()</code>方法不支持 id 参数</li>
-<li>helper 方法不再强制原文输出，是否编码取决于模板语句</li>
-<li><code>template.helpers</code> 中的<code>$string</code>、<code>$escape</code>、<code>$each</code>已迁移到<code>template.utils</code>中</li>
-<li><code>template()</code>方法不支持传入模板直接编译</li>
-</ol>
-<h3 id="升级方法"><a href="#升级方法" class="headerlink" title="升级方法"></a>升级方法</h3><ol>
-<li>如果想继续使用 js 原生语法作为模板语言，请使用 <a href="https://raw.github.com/aui/artTemplate/master/dist/template-native.js" target="_blank" rel="external">template-native.js</a></li>
-<li>查找项目<code>template.render</code>替换为<code>template</code></li>
-<li>使用<code>template.config(name, value)</code>来替换以前的配置</li>
-<li><code>template()</code>方法直接传入的模板改用<code>template.compile()</code>（v2初期版本）</li>
-</ol>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="https://henlow.github.io/img/zhifubao.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="https://henlow.github.io/img/weixinzhifu.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -326,121 +185,25 @@ NodeJS
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">模板引擎</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">工具</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/03/17/artTemplate/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2017/03/21/Webstrom个人设置/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Webstrom个人设置
-        
-      </div>
-    </a>
   
   
-    <a href="/2017/03/16/less/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">less预处理CSS</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-
-
-
-
-  
-  <div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="artTemplate" data-title="artTemplate 模板引擎" data-url="http://yoursite.com/2017/03/17/artTemplate/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"true"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
+    </div></section>
   
 
-
+    
 
 
           </div>
@@ -463,9 +226,9 @@ NodeJS
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
